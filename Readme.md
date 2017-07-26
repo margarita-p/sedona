@@ -1,4 +1,5 @@
 Название сайта: Седона
-Учебный макет htmlacademy.ru
+
+Учебный макет http://htmlacademy.ru
 
 Резиновая верстка от 768px до 1200px, HTML5, LESS. IE10+.
