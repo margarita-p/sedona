@@ -1048,8 +1048,8 @@ img {
 .sorting {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: baseline;
-      align-items: baseline;
+  -ms-flex-align: center;
+      align-items: center;
   width: 88%;
   margin: 0 auto;
 }
