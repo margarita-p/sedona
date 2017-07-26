@@ -1,0 +1,38 @@
+.social-btn {
+  position: relative;
+  display: block;
+  .size(46px, 48px);
+  margin-right: 6px;
+  background-color: @palette-primary;
+  &:last-child {
+    margin-right: 0;
+  }
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    .size(46px, 48px);
+    background-image: url("../img/icons.png");
+    background-repeat: no-repeat;
+  }
+  &--tw::after {
+    background-position: 16px -73px;
+  }
+  &--fb::after {
+    background-position: 19px -123px;
+  }
+  &--yt::after {
+    background-position: 13px -174px;
+  }
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+  &:active {
+    background-color: #5496bd;
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+}

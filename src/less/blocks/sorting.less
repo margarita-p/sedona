@@ -1,0 +1,124 @@
+.sorting {
+  display: flex;
+  align-items: baseline;
+  width: 88%;
+  margin: 0 auto;
+}
+
+.sorting__list {
+  .list-none;
+  display: flex;
+  padding: 37px 0;
+  &--arrows {
+    margin-left: auto;
+  }
+}
+
+.sorting__title {
+  .font-family();
+  font-size: 21px;
+  font-weight: 700px;
+  line-height: 1;
+  width: 135px;
+  margin: 0;
+  margin-right: 30px;
+  color: @palette-title;
+}
+
+.sorting__item {
+  .font-family();
+  font-size: 12px;
+  font-weight: 400px;
+  line-height: 1;
+  margin-right: 35px;
+  a {
+    color: fade(@palette-title, 30%);
+    text-decoration: none;
+    border-bottom: 1px dashed @palette-primary;
+    &:hover,
+    &:focus {
+      color: @palette-primary;
+    }
+    &:active {
+      color: @palette-title;
+      border-bottom: none;
+    }
+  }
+  &--active a {
+    color: @palette-primary;
+    border-bottom: none;
+    &:hover,
+    &:focus,
+    &:active {
+      color: @palette-primary;
+      cursor: default;
+    }
+  }
+}
+
+.sorting__list-title {
+  .font-family();
+  width: auto;
+  margin: 0;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1;
+  color: @palette-title;
+}
+
+.sorting__arrow {
+  a {
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+  }
+  &--up {
+    a {
+      margin-right: 12px;
+      border-bottom: 10px solid #ccc;
+      &:hover,
+      &:focus {
+        border-bottom: 10px solid #000;
+      }
+      &:active {
+        border-bottom: 10px solid @palette-primary;
+      }
+    }
+  }
+  &--up-active {
+    border-bottom: 10px solid @palette-primary;
+    cursor: default;
+    a {
+      &:hover,
+      &:focus,
+      &:active {
+        border-bottom: 10px solid @palette-primary;
+      }
+    }
+  }
+  &--down {
+    a {
+      border-top: 10px solid #ccc;
+      &:hover,
+      &:focus {
+        border-top: 10px solid #000;
+      }
+      &:active {
+        border-top: 10px solid #ccc;
+      }
+    }
+  }
+  &--down-active {
+    a {
+      border-top: 10px solid @palette-primary;
+      cursor: default;
+      &:hover,
+      &:focus,
+      &:active {
+        border-top: 10px solid @palette-primary;
+      }
+    }
+  }
+}

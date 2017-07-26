@@ -1,0 +1,50 @@
+.page-header {
+  width: 100%;
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  .size(138px, 70px);
+  margin-left: -69px;
+  z-index: 3;
+}
+
+.page-header__intro {
+  position: relative;
+  .size(100%, 511px);
+  padding-top: 76px;
+  background-color: @palette-background;
+  background-image: url("../img/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+  box-sizing: border-box;
+  &::after {
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    .size(100%, 57px);
+    background-image: url("../img/bg-mask.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    z-index: 1;
+  }
+  @media (min-width: 1000px) {
+    background-position: center -20px;
+  }
+  @media (min-width: 1120px) {
+    background-position: center -40px;
+  }
+  @media @desktop-widths {
+    background-position: center -56px;
+  }
+}
+
+.page-header__slogan {
+  .size(458px, 352px);
+  margin: 0 auto;
+}

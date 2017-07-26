@@ -1,0 +1,60 @@
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 36px 0;
+  background-color: fade(#fdfefd, 90%);
+  &--page {
+    position: static;
+    margin-top: auto;
+    background-color: transparent;
+  }
+}
+
+.page-footer__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.page-footer__col {
+  display: flex;
+  width: 33.3%;
+  justify-content: center;
+  align-items: center;
+  &--hachtag {
+    a {
+      .font-title();
+      color: @palette-title;
+      text-decoration: none;
+      &:hover,
+      &:focus {
+        color: @palette-primary;
+      }
+      &:active {
+        color: fade(@palette-title, 30%);
+      }
+    }
+  }
+  &--copyright {
+    span {
+      display: block;
+      margin-right: 8px;
+      .font-normal();
+      color: @palette-title;
+    }
+    a {
+      display: block;
+    }
+    svg {
+      width: 113px;
+      height: 39px;
+      &:hover,
+      &:focus {
+        fill: @palette-primary;
+      }
+      &:active {
+        fill: fade(@palette-title, 30%);
+      }
+    }
+  }
+}
